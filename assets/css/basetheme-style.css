@@ -1,0 +1,413 @@
+:root {
+    --color-main: #1e3c61;
+    --color-sub: #ed4b5e;
+    --color-text: #666666;
+    --color-light: #f1f7ff;
+    --color-main-t: #1e3c6170;
+    --color-sub-t: #ed4b5e70;
+}
+
+html,
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: var(--color-text);
+    font-size: 14px;
+}
+
+a {
+    color: var(--color-sub);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-main);
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-main)
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+/*------------------
+    Utility Classes
+-------------------*/
+
+.mvh-20{
+    margin: 20vh auto;
+}
+
+.mt-2{
+margin-top: 20px;
+}
+
+.ta-c{
+    text-align: center;
+}
+
+.c-sub{
+    color: var(--color-sub);
+}
+.f-20{
+    font-size: 20px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-light);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: all .1s ease-in-out;
+}
+
+.button:hover {
+    opacity: .95;
+    cursor: pointer;
+}
+
+.button-main {
+    background-color: var(--color-sub);
+}
+
+
+/*-------------------
+    Header Section
+---------------------*/
+
+header {
+    background: var(--color-main);
+    padding: 10px;
+    border-bottom: 2px solid var(--color-sub);
+    color: var(--color-light);
+}
+
+.header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.site-title,
+.site-description {
+    padding: 0;
+    margin: 0;
+
+}
+
+.site-title blog-aside{
+    font-size: 24px
+}
+
+.site-title a:hover {
+    color: var(--color-sub);
+}
+
+
+.site-description {
+    font-size: 12px;
+    letter-spacing: 0.1px;
+}
+
+.search-field {
+    width: 240px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.search-field:focus {
+    border: 1px solid var(--color-sub);
+}
+
+
+/*------------------
+    Navbar Section
+--------------------*/
+
+.navbar {
+    padding: 20px 0;
+    background-color: var(--color-light);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+.navbar-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-ul .menu-item {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.site-content {
+    margin-bottom: 40px;
+}
+
+/*------------------
+    Blog Section
+--------------------*/
+.page-title {
+    text-align: center;
+}
+
+.blogpage-content {
+    
+    margin-top: 40px;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+}
+
+.blog{
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-light);
+}
+
+.blog:last-of-type{
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
+
+.blog-sec {
+    width: 70%;
+}
+
+.blog-info {
+    background-color: var(--color-light);
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+}
+
+.blog-category:after {
+    content: ', '
+}
+
+.blog-category:last-of-type:after {
+    content: ''
+}
+
+.blog-thumbnail {
+    width: 100%;
+    height: 340px;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-thumbnail a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.blog-title a {
+    color: var(--color-main);
+
+}
+
+.blog-content{
+    word-break: break-all;
+}
+
+
+.blog-excerpt {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.blog-link {
+    background-color: var(--color-light);
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+/*------------------
+    Single Section
+--------------------*/
+.singlepage-content {
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.single-thumbnail {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.single-meta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.single-title {
+    font-size: 28px;
+    margin: 0;
+}
+
+.single-title,
+.single-info {
+    text-align: center;
+    color: var(--color-light);
+}
+
+.single-content {
+    margin-top: 40px;
+}
+
+
+/*----------------------
+    Single-page
+------------------------*/
+
+.single-page .single-thumbnail{
+    height: 200px;
+}
+
+
+
+/*------------------
+    Archive Section
+--------------------*/
+
+.archive-title{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 28px;
+    border-bottom: 2px solid var(--color-light);
+    color: var(--color-sub);
+}
+
+/*----------------------
+    Post Format: Aside
+------------------------*/
+.post-format-icon{
+    color: var(--color-sub);
+    font-size: 36px;
+}
+
+.post-format-title{
+    color: var(--color-main);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.blog-aside .blog-meta{
+    border-top: 2px solid var(--color-main);
+    border-bottom: 2px solid var(--color-sub);
+    border-radius: none;
+}
+
+
+/*----------------------
+    Post Format: Link
+------------------------*/
+
+.blog-gallery .blog-meta, 
+.blog-video .blog-meta,
+.blog-link .blog-meta {
+    display: block;
+    border-top: 2px solid var(--color-main);
+    border-bottom: 2px solid var(--color-sub);
+    border-radius: none;
+}
+
+/*----------------------
+    Post Format: Gallery
+------------------------*/
+
+.blog-gallery .blog-content{
+    background-color: var(--color-light);
+}
+
+.blog-gallery .blog-content img{
+    width: auto;
+    border: 3px solid var(--color-main)!important;
+}
+
+
+/*----------------------
+    Post Format: Video
+------------------------*/
+
+
+.blog-video .blog-content{
+    width: auto;
+}
+.blog-video .blog-content iframe{
+    width: 100%;
+}
+
+
+/*------------------
+    Footer Section
+--------------------*/
+
+footer {
+    background-color: var(--color-light);
+}
+
+.footer-top {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-copy {
+    background-color: var(--color-main);
+    padding: 5px;
+    color: var(--color-light);
+    text-align: center;
+}
+
+.footer-copy a:hover {
+    text-decoration: underline;
+    color: var(--color-sub);
+}
